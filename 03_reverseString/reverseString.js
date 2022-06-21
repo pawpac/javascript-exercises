@@ -1,28 +1,11 @@
-const reverseString = function() {
-
+const reverseString = function(string) {
+  let newArray = [];
+  let splitted = string.split('');
+  for (let i = 0; i < splitted.length; i++) {
+    newArray.unshift(splitted[i])
+  }
+  return newArray.join('');
 };
 
 // Do not edit below this line
 module.exports = reverseString;
-
-
-
-
-
-// function splitStr(str) {
-//   let splited = str.split('');
-//   return splited;
-// }
-
-// splitStr("test");
-
-// function reverseArr() {
-//   const newArr = [];
-//   const oldArr = ['a', 'b', 'c'];
-//   for (let i = 0; i < oldArr.length; i++) {
-//       newArr.unshift(oldArr[i]);
-//       }
-//   return newArr;
-// }
-
-// reverseArr();
